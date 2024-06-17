@@ -1,3 +1,5 @@
+/*esercizio 1*/
+
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -11,6 +13,8 @@
     transition: background-color 5s ease;
   }
 
+/*esercizio 2*/
+
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -19,37 +23,171 @@
 
 /* risoluzione youssef esercizio 2*/
 
+.ex-2-square:active {
+    width: 100%;
+    transition: 3s;
+  }
+
+
+/*esercizio 3*/
 
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
 }
+
+/* risoluzione youssef esercizio 3*/
+
+.ex-3-square:hover {
+    border-radius: 50%;
+    transition: 3s;
+  }
+
+  /*esercizio 4*/
+
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
 }
+
+/* risoluzione youssef esercizio 4*/
+
+.ex-4-square:hover {
+    opacity: 0;
+    transition: 3s;
+  }
+
+/*esercizio 5*/
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
 }
+/* risoluzione youssef esercizio 5*/
+
+.ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+    transition: 3s;
+  }
+
+  .ex-5-square:active {
+    width: 10px;
+    height: 10px;
+    transition: 3s;
+  }
+
+/*esercizio 6-7-8*/
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+
+/* risoluzione youssef esercizio 6*/
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+/* risoluzione youssef esercizio 7*/
+
+.ex-7-img:hover{
+    filter: grayscale(100%);
+    transition: 3s;
+}
+
+.ex-7-img:active{
+    filter:invert(100%);
+    transition: 3s;
+}
+
+/* risoluzione youssef esercizio 8*/
+
+.ex-8-img:hover{
+    filter: grayscale(100%);
+    transition: 3s;
+    border-radius: 50%;
+}
+
+.ex-8-img:active{
+    filter:invert(100%);
+    transition: 3s;
+}
+
+/*esercizio 9*/
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+
+/* risoluzione youssef esercizio 9*/
+
+.ex-9-img:hover{
+    filter: grayscale(100%);
+    transition: 3s;
+    border-radius: 50%;
+    transform: scale(1.5);
+}
+
+.ex-9-img:active{
+    filter:invert(100%);
+    transition: 3s;
+}
+/* esercizio 10*/
 .ex-10-icon {
     font-size: 60px;
 }
+
+/* risoluzione youssef esercizio 10*/
+
+.ex-10-icon {
+    animation-name: ruotare;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ruotare {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*esercizio 11*/
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+/* risoluzione youssef esercizio 11*/
+
+.ex-11-icon:hover {
+    animation-name: ruotare-2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ruotare-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*esercizio 12 -13*/
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -79,3 +217,51 @@
     width: 60px;
     height: 20px;
 }
+
+/* risoluzione youssef esercizio 12*/
+
+.ex-12-top-white {
+    animation-name: ruotare-3;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+@keyframes ruotare-3 {
+    0%{
+        left: 10%;
+    }
+    25%{
+        left: 30%;
+    }
+    50%{
+        left: 50%;
+    }
+    
+    100%{
+        left: 10%;
+    }
+}
+.ex-12-bottom-white{
+    animation-name: ruotare-4;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+@keyframes ruotare-4 {
+    0%{
+        right: 10%;
+    }
+    25%{
+        right: 30%;
+    }
+    50%{
+        right: 50%;
+    }
+   
+    100%{
+        right: 10%;
+    }
+}
+/* risoluzione youssef esercizio 13*/
+
+
